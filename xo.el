@@ -21,14 +21,14 @@
 
 ;;; Commentary:
 
-;; Need to call setup-xo for this to work as intented.
+;; Need to call xo-setup for this to work as intented.
 ;; This only works when launching xo with the --compact flag.
 
 ;;; Code:
 
 (provide 'xo)
 
-(defun setup-xo ()
+(defun xo-setup ()
   (add-to-list 'compilation-error-regexp-alist-alist
 	       '(xo "\\(/\\(?:\\w+/\\)+\\w*\\.js\\): line \\([1-9]*\\), col \\([1-9]*\\), \\w+ .*" 1 2 3))
 
